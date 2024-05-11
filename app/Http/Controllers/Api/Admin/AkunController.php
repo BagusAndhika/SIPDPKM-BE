@@ -323,7 +323,7 @@ class AkunController extends Controller
                 'body' => 'Testing',
                 'user_email' => $user->email,
                 'user_name' => $user->nama,
-                'reset_url' => "ganti sesuai url web nya"
+                'reset_url' => "https://sipdpkm-2.vercel.app/ganti-password"
             ];
             // try send mail
             Mail::to($data['user_email'])->send(new SendEmail($data));
